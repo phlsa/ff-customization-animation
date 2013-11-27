@@ -1,0 +1,58 @@
+* {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.description {
+	position: absolute;
+}
+
+.window {
+	position: relative;
+	width: 1313px;
+	height: 773px;
+	background-image: url('../img/window.png');
+	background-size: 100%;
+}
+
+.button {
+	position: absolute;
+	left: 770px;
+	top: 190px;
+	width: 80px;
+	height: 80px;
+}
+
+.icon {
+	width: 27.5px;
+	height: 26.5px;
+	background-image: url('../img/home.png');
+	background-size: 100%;
+	margin: 7px auto;
+	transition: all .3s cubic-bezier(.7, 2, .85, 1.5);
+}
+
+.label {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 30px;
+	transition: all .1s ease;
+}
+
+.button:hover {
+	cursor: grab;
+}
+.button.dragging {
+	cursor: grabbing;
+}
+
+.button.dragging .icon {
+	transform: scale(1.2);
+}
+
+.button.dragging .label {
+	opacity: 0;
+}
