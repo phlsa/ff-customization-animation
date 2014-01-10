@@ -2,8 +2,8 @@ var grabX, grabY;
 
 $(document).ready(function() {
 	$('.button').on('mousedown mouseup', function(e) {
-		grabX = ( e.pageX - $('.button').offset().left );
-		grabY = ( e.pageY - $('.button').offset().top );
+		grabX = ( e.pageX - $('.button').offset().left + $('.window').offset().left );
+		grabY = ( e.pageY - $('.button').offset().top + $('.window').offset().top );
 		$(e.currentTarget).toggleClass('dragging');
 	});
 	$(document).on('mousemove', function(e) {

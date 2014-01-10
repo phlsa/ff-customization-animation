@@ -7,11 +7,13 @@ body {
 }
 
 .description {
-	position: absolute;
+	padding: 20px;
 }
 
 .window {
 	position: relative;
+	left: 0;
+	top: 0;
 	width: 1313px;
 	height: 773px;
 	background-image: url('../img/window.png');
